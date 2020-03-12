@@ -1,0 +1,71 @@
+.login-page-wrapp {
+  min-height: 100vh;
+}
+
+.login-form-wrap {
+  width: 50%;
+  padding: 20px;
+}
+
+.login-form-wrap .form-card {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.login-form-wrap .form-card .card-title {
+  color: var(--gray);
+}
+
+.login-greeting-screen {
+  background: var(--teal);
+  width: 50%;
+  padding: 20px;
+}
+
+.login-greeting-screen .login-greeting-screen-text {
+  position: fixed;
+  top: 33%;
+  max-width: 500px;
+}
+
+.login-greeting-screen .login-greeting-screen-text {
+  color: var(--white);
+}
+
+.login-greeting-screen .login-greeting-screen-title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.login-greeting-screen .login-greeting-screen-description {
+  line-height: 1.4;
+}
+
+.autocomplete {
+  background: white;
+  z-index: 1000;
+  overflow: auto;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.autocomplete * {
+  font: inherit;
+}
+
+.autocomplete > div {
+  color: #495057;
+  padding: 0 4px;
+}
+
+.autocomplete .group {
+  background: #eee;
+}
+
+.autocomplete > div:hover:not(.group),
+.autocomplete > div.selected {
+  background: #007bff;
+  color: #eee;
+  cursor: pointer;
+}
