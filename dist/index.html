@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  <link href="./style.css" rel="stylesheet"></head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <div class="login-form-wrap d-flex align-items-center">
+        <div class="form-card card ml-auto">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="login-tab"
+                data-toggle="tab"
+                href="#login"
+                role="tab"
+                aria-controls="login"
+                aria-selected="true"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="signup-tab"
+                data-toggle="tab"
+                href="#signup"
+                role="tab"
+                aria-controls="signup"
+                aria-selected="false"
+                >Signup</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="login"
+              role="tabpanel"
+              aria-labelledby="login-tab"
+            >
+              <div class="card-body card-body-login">
+                <h4 class="card-title">Please Login</h4>
+                <form name="loginForm">
+                  <div class="form-group">
+                    <label for="email-login">Email address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email-login"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password-login">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password-login"
+                      placeholder="Password"
+                      data-required="password"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="signup"
+              role="tabpanel"
+              aria-labelledby="signup-tab"
+            >
+              <div class="card-body card-body-signup">
+                <h4 class="card-title">Please Signup</h4>
+                <form name="signupForm">
+                  <div class="form-group">
+                    <label for="nickname-signup">Nickname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nickname-signup"
+                      placeholder="Nickname"
+                      data-required="nickname"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="firstname-signup">Firstname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstname-signup"
+                      placeholder="Firstname"
+                      data-required="firstname"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname-signup">Lastname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastname-signup"
+                      placeholder="Lastname"
+                      data-required="lastname"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="gender-signup">Gender</label>
+                    <select
+                      class="form-control"
+                      id="gender-signup"
+                      data-required="gender"
+                    >
+                      <option selected disabled value="not-gender"
+                        >Choose gender</option
+                      >
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="birthday-signup">Date of birthday</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="birthday-signup"
+                      placeholder="Date of birthday"
+                      data-required="birthday"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="country-signup">Country</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="country-signup"
+                      placeholder="Country"
+                      data-required="country"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="city-signup">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city-signup"
+                      placeholder="City"
+                      data-required="city"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone-signup">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone-signup"
+                      placeholder="Phone"
+                      data-required="phone"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email-signup">Email address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email-signup"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password-signup">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password-signup"
+                      placeholder="Password"
+                      data-required="password"
+                      data-invalid-message="Password must be min 8 char length"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    <!-- /.login-page-wrapp -->
+  <script type="text/javascript" src="polyfill.faa582436056108916b8.js"></script><script type="text/javascript" src="app.faa582436056108916b8.js"></script></body>
+</html>
